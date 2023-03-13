@@ -1,0 +1,106 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic;
+    transition: all .5s;
+}
+
+::selection{
+    background-color: #00ff8550;
+    padding: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-90deg, #222222, #0c9452, #222222);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+
+.flex {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    padding: 50px;
+    background-color: #222222;
+    color: #00ff85;
+    border-radius: 5%;
+    justify-content: space-around;
+}
+
+.login a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.item {
+    width: 700px;
+    border-radius: 100px;
+    padding: 8px;
+    border: none;
+}
+
+.btn{
+    border-radius: 100px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #00ff85;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
